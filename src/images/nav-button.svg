@@ -1,0 +1,5 @@
+<svg className="nav-button" width="50" height="50" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect className="square" x="2" y="2" width="71" height="71" stroke="#2D2F45" stroke-width="4"/>
+<line className="line one" x1="3.27356e-07" y1="37.5" x2="75" y2="37.5" stroke="#9C5F10" stroke-width="4" />
+<line className="line two" x1="3.27356e-07" y1="37.5" x2="75" y2="37.5" stroke="#9C5F10" stroke-width="4" />
+</svg>

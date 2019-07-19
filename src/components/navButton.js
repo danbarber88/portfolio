@@ -5,7 +5,10 @@ import styled from "styled-components"
 const StyledButton = styled.div`
   opacity: 1;
   cursor: pointer;
+  height: 50px;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 
+  /* .line, .one and .two are classes on nav-button.svg */
   .line {
     transition: all 0.15s ease-out;
     transform-origin: 50% 50%;
@@ -17,14 +20,6 @@ const StyledButton = styled.div`
 
   .two {
     transform: ${props => (props.navOpen ? `rotate(-45deg)` : `rotate(0deg)`)};
-  }
-
-  .nav-button {
-    transition: opacity 0.25s;
-  }
-
-  &:hover .nav-button {
-    opacity: 1;
   }
 `
 
