@@ -1,0 +1,75 @@
+import styled from "styled-components"
+
+export const StyledNav = styled.nav`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 30px 50px;
+
+  @media (max-width: 768px) {
+    align-items: flex-start;
+
+    padding: 15px 25px;
+    height: ${props => (props.navOpen ? "307px" : "108px")};
+
+    /* Delay the height animation to give the NavItems a chance to fade out on nav close */
+    transition: ${props =>
+      props.navOpen ? "height 0.15s ease-out" : "height 0.15s 0.35s ease-out"};
+  }
+`
+
+export const Container = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
+`
+
+export const NavItems = styled.ul`
+  display: flex;
+  align-items: center;
+  margin: 0 60px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    margin-top: 70px;
+  }
+`
+
+export const NavItem = styled.li`
+  cursor: pointer;
+  user-select: none;
+  list-style: none;
+  font-family: Oswald;
+  font-size: 1.5em;
+  margin: 0 50px;
+
+  transition: all 0.15s ease-out;
+
+  /* Fade in from right to left when nav opens */
+  transform: ${props =>
+    props.navOpen ? "translateX(0px)" : "translateX(60px)"};
+  opacity: ${props => (props.navOpen ? 1 : 0)};
+  visibility: ${props => (props.navOpen ? "visible" : "hidden")};
+
+  @media (max-width: 768px) {
+    margin: 20px 0;
+
+    /* Delay the NavItems from fading in the give the nav a chance to fully open */
+    transition: ${props =>
+      props.navOpen ? "all 0.15s 0.35s ease-out" : "all 0.15s ease-out"};
+
+    /* Fade in from top to bottom when nav opens */
+    transform: ${props =>
+      props.navOpen ? "translateY(0px)" : "translateY(-60px)"};
+  }
+
+  &:hover {
+    text-decoration: underline;
+    text-decoration-color: #9c5f10;
+  }
+`

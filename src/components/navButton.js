@@ -3,9 +3,11 @@ import Button from "../images/nav-button.svg"
 import styled from "styled-components"
 
 const StyledButton = styled.div`
+  display: flex;
+  align-items: center;
   opacity: 1;
   cursor: pointer;
-  height: 50px;
+  height: 73px;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 
   /* .line, .one and .two are classes on nav-button.svg */
@@ -20,6 +22,13 @@ const StyledButton = styled.div`
 
   .two {
     transform: ${props => (props.navOpen ? `rotate(-45deg)` : `rotate(0deg)`)};
+  }
+
+  @media (max-width: 768px) {
+    .nav-button {
+      height: 40px;
+      width: 40px;
+    }
   }
 `
 
