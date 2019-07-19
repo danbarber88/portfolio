@@ -1,19 +1,21 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import { createGlobalStyle } from "styled-components"
+
+import Nav from "./nav"
+
+const GlobalStyle = createGlobalStyle`
+  body {
+    background-color: #fafafa;
+    color: #2D2F45;
+  }
+`
 
 const Layout = ({ children }) => {
-  
-
   return (
     <>
+      <GlobalStyle />
+      <Nav />
       {children}
     </>
   )
