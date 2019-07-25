@@ -10,6 +10,7 @@ const typography = new Typography({
   headerGray: "20",
   headerWeight: "400",
   bodyWeight: "400",
+  baseFontSize: "18px",
 })
 
 // Export helper functions
