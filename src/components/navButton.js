@@ -1,6 +1,7 @@
 import React from "react"
 import Button from "../images/nav-button.svg"
 import styled from "styled-components"
+import { device } from "../utils/device"
 
 const StyledButton = styled.div`
   display: flex;
@@ -24,7 +25,7 @@ const StyledButton = styled.div`
     transform: ${props => (props.navOpen ? `rotate(-45deg)` : `rotate(0deg)`)};
   }
 
-  @media (max-width: 768px) {
+  @media ${device.tablet} {
     .nav-button {
       height: 40px;
       width: 40px;

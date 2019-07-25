@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { device } from "../utils/device"
 
 export const StyledNav = styled.nav`
   display: flex;
@@ -7,7 +8,7 @@ export const StyledNav = styled.nav`
   background-color: #fff;
   padding: 30px 50px;
 
-  @media (max-width: 768px) {
+  @media ${device.tablet} {
     align-items: flex-start;
 
     padding: 15px 25px;
@@ -24,7 +25,7 @@ export const Container = styled.div`
   justify-content: flex-end;
   width: 100%;
 
-  @media (max-width: 768px) {
+  @media ${device.tablet} {
     justify-content: center;
   }
 `
@@ -34,7 +35,7 @@ export const NavItems = styled.ul`
   align-items: center;
   margin: 0 60px;
 
-  @media (max-width: 768px) {
+  @media ${device.tablet} {
     flex-direction: column;
     margin-top: 70px;
   }
@@ -56,7 +57,7 @@ export const NavItem = styled.li`
   opacity: ${props => (props.navOpen ? 1 : 0)};
   visibility: ${props => (props.navOpen ? "visible" : "hidden")};
 
-  @media (max-width: 768px) {
+  @media ${device.tablet} {
     margin: 20px 0;
 
     /* Delay the NavItems from fading in the give the nav a chance to fully open */
