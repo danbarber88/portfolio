@@ -6,7 +6,7 @@ import {
   Name,
   Text,
   Line,
-} from "styled-components/introStyles"
+} from "./styled-components/introStyles"
 
 const Intro = () => (
   <Container>
@@ -19,7 +19,7 @@ const Intro = () => (
       <Text>
         I’m an aspiring web developer, I’m self motivated and self taught with a
         focus towards front end technologies.
-        <Line height="2px" width="60px" margin="9px 0 9px 16px" />
+        <Line height="2px" width="50px" margin="9px 0 9px 16px" />
       </Text>
     </TextWrapper>
   </Container>
