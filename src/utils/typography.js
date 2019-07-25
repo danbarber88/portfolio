@@ -2,7 +2,7 @@ import Typography from "typography"
 
 const typography = new Typography({
   googleFonts: [
-    { name: "Oswald", styles: [400, 500] },
+    { name: "Oswald", styles: [300, 400, 500] },
     { name: "Lato", styles: [400, 500] },
   ],
   headerFontFamily: ["Oswald"],

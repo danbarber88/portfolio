@@ -8,6 +8,7 @@ const StyledButton = styled.div`
   align-items: center;
   opacity: 1;
   cursor: pointer;
+  user-select: none;
   height: 73px;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 

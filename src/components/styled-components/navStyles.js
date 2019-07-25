@@ -1,7 +1,10 @@
 import styled from "styled-components"
-import { device } from "../utils/device"
+import { device } from "../../utils/device"
 
 export const StyledNav = styled.nav`
+  position: absolute;
+  width: 100%;
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -43,11 +46,11 @@ export const NavItems = styled.ul`
 
 export const NavItem = styled.li`
   cursor: pointer;
-  user-select: none;
   list-style: none;
   font-family: Oswald;
   font-size: 1.5em;
   margin: 0 50px;
+  text-decoration-color: #9c5f10;
 
   transition: all 0.15s ease-out;
 
