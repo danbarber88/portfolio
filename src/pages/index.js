@@ -1,35 +1,19 @@
 import React from "react"
 import styled from "styled-components"
 import { device } from "../utils/device"
+import { graphql, Link } from "gatsby"
+import Img from "gatsby-image"
 
-import Layout from "../components/layout"
+import Layout, { Wrapper, Header, LargeText } from "../components/layout"
 import SEO from "../components/seo"
 import Intro from "../components/intro"
-
-const Header = styled.h2`
-  font-size: 48px;
-  line-height: 55px;
-  letter-spacing: 0.05em;
-
-  @media ${device.tablet} {
-    margin-bottom: 4rem;
-  }
-`
-
-const AfterIntro = styled(Header)`
-  margin: 100px 0;
-  width: 600px;
-
-  @media ${device.tablet} {
-    width: 90%;
-  }
-`
+import Skills from "../components/skills"
 
 const About = styled.section`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 300px 0;
+  margin-top: 300px;
 
   p {
     z-index: 1;
@@ -43,23 +27,30 @@ const About = styled.section`
   }
 `
 
-const Wrapper = styled.div`
-  width: 55%;
-  margin: 0 auto;
-
-  @media ${device.laptop} {
-    width: 80%;
-  }
-
-  @media ${device.tablet} {
-    width: 90%;
-  }
+const DarkSection = styled.div`
+  position: relative;
+  margin-top: -300px;
+  background: linear-gradient(179.93deg, #2d2f45 10.77%, #1c1d2d 91.61%);
+  width: 100%;
+  box-sizing: border-box;
 `
 
-const DarkSection = styled.div`
-  background: linear-gradient(179.93deg, #2d2f45 10.77%, #1c1d2d 91.61%);
-  height: 1000px;
+const Wave = styled(Img)`
   width: 100%;
+  max-width: 100%;
+`
+
+const StyledLink = styled(Link)`
+  color: #fafafa;
+  font-family: Oswald;
+  font-size: 48px;
+  line-height: 55px;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+
+  :visited {
+    color: #fafafa;
+  }
 `
 
 const IndexPage = props => (
@@ -68,11 +59,11 @@ const IndexPage = props => (
 
     <Wrapper>
       <Intro />
-      <AfterIntro>
+      <LargeText>
         I<span className="orange">'</span>ve spent the last two years dedicated
         to learning as much as I can about web dev
         <span className="orange">.</span>
-      </AfterIntro>
+      </LargeText>
       <About>
         <Header>About Me</Header>
         <p>
@@ -88,9 +79,25 @@ const IndexPage = props => (
       </About>
     </Wrapper>
     <DarkSection>
-      <Wrapper></Wrapper>
+      <Wave fixed={props.data.wave.childImageSharp.fixed} critical />
+      <Wrapper>
+        <Skills />
+        <StyledLink to="/">Explore my work ></StyledLink>
+      </Wrapper>
     </DarkSection>
   </Layout>
 )
+
+export const query = graphql`
+  query {
+    wave: file(relativePath: { eq: "wave.png" }) {
+      childImageSharp {
+        fixed(quality: 100, width: 2000) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+  }
+`
 
 export default IndexPage

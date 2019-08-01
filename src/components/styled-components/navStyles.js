@@ -15,7 +15,7 @@ export const StyledNav = styled.nav`
     align-items: flex-start;
 
     padding: 15px 25px;
-    height: ${props => (props.navOpen ? "307px" : "108px")};
+    height: ${props => (props.navOpen ? "322px" : "108px")};
 
     /* Delay the height animation to give the NavItems a chance to fade out on nav close */
     transition: ${props =>

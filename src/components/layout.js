@@ -21,6 +21,39 @@ const GlobalStyle = createGlobalStyle`
   }
 `
 
+export const Wrapper = styled.div`
+  width: 55%;
+  margin: 0 auto;
+
+  @media ${device.laptop} {
+    width: 80%;
+  }
+
+  @media ${device.tablet} {
+    width: 90%;
+  }
+`
+
+export const Header = styled.h2`
+  z-index: 1;
+  font-size: 48px;
+  line-height: 55px;
+  letter-spacing: 0.05em;
+
+  @media ${device.tablet} {
+    margin-bottom: 4rem;
+  }
+`
+
+export const LargeText = styled(Header)`
+  margin: 100px 0;
+  width: 600px;
+
+  @media ${device.tablet} {
+    width: 90%;
+  }
+`
+
 const Layout = ({ children }) => {
   return (
     <>
