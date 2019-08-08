@@ -8,6 +8,7 @@ import Layout, { Wrapper, Header, LargeText } from "../components/layout"
 import SEO from "../components/seo"
 import Intro from "../components/intro"
 import Skills from "../components/skills"
+import Footer from "../components/footer"
 
 const About = styled.section`
   display: flex;
@@ -83,6 +84,7 @@ const IndexPage = props => (
       <Wrapper>
         <Skills />
         <StyledLink to="/">Explore my work ></StyledLink>
+        <Footer darkBg />
       </Wrapper>
     </DarkSection>
   </Layout>
