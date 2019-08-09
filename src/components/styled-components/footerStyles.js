@@ -4,6 +4,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 export const Container = styled.footer`
   color: ${props => (props.darkBg ? "#fafafa" : "inherit")};
+
+  .logo-d {
+    fill: ${props => (props.darkBg ? "#fafafa" : "#2d2f45")};
+  }
 `
 
 export const Nav = styled.div`
@@ -39,6 +43,7 @@ export const SocialLinksContainer = styled.div`
 export const StyledIcon = styled(FontAwesomeIcon)`
   margin-right: 10px;
   transition: color 0.15s ease-out;
+  color: inherit;
 
   :hover {
     color: #9c5f10;
@@ -58,6 +63,7 @@ export const SocialLinkIcons = styled.div`
     margin: 0;
     font-size: 22px;
     letter-spacing: 1px;
+    color: inherit;
   }
 
   .slash {
@@ -75,10 +81,10 @@ export const SocialLinkIcons = styled.div`
 export const SocialLink = styled.a`
   display: flex;
   align-items: center;
-  color: #fafafa;
+  color: inherit;
   text-decoration: none;
 
   :visited {
-    color: #fafafa;
+    color: inherit;
   }
 `
