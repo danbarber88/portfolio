@@ -83,7 +83,7 @@ const IndexPage = props => (
       <Wave fixed={props.data.wave.childImageSharp.fixed} critical />
       <Wrapper>
         <Skills />
-        <StyledLink to="/">Explore my work ></StyledLink>
+        <StyledLink to="/work/">Explore my work ></StyledLink>
         <Footer darkBg />
       </Wrapper>
     </DarkSection>

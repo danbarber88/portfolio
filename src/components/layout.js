@@ -25,7 +25,7 @@ export const Wrapper = styled.div`
   width: 55%;
   margin: 0 auto;
 
-  @media ${device.laptop} {
+  @media ${device.laptopL} {
     width: 80%;
   }
 
@@ -46,7 +46,7 @@ export const Header = styled.h2`
 `
 
 export const LargeText = styled(Header)`
-  margin: 100px 0;
+  padding: 100px 0;
   width: 600px;
 
   @media ${device.tablet} {
