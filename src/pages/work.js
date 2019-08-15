@@ -138,30 +138,4 @@ const WorkPage = () => (
   </Layout>
 )
 
-export const query = graphql`
-  query {
-    mulberry: file(relativePath: { eq: "mulberry.png" }) {
-      childImageSharp {
-        fluid(quality: 100, maxWidth: 800, maxHeight: 500) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    f1: file(relativePath: { eq: "f1.png" }) {
-      childImageSharp {
-        fluid(quality: 100) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    portfolio: file(relativePath: { eq: "portfolio.png" }) {
-      childImageSharp {
-        fluid(quality: 100) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
-`
-
 export default WorkPage
