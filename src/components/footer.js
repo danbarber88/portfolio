@@ -23,43 +23,27 @@ const Footer = props => (
           rel="noopener noreferrer"
           target="_blank"
         >
-          <FooterStyle.StyledIcon
-            className="logos"
-            icon={faLinkedin}
-            size="3x"
-          />
+          <FooterStyle.StyledIcon icon={faLinkedin} size="3x" />
         </FooterStyle.SocialLink>
         <FooterStyle.SocialLink
           href="https://github.com/danbarber88"
           rel="noopener noreferrer"
           target="_blank"
         >
-          <FooterStyle.StyledIcon
-            className="logos"
-            icon={faGithubSquare}
-            size="3x"
-          />
+          <FooterStyle.StyledIcon icon={faGithubSquare} size="3x" />
         </FooterStyle.SocialLink>
         <p className="slash">/</p>
         <p>danbarber88</p>
       </FooterStyle.SocialLinkIcons>
       <FooterStyle.SocialLinkIcons>
         <FooterStyle.SocialLink href="mailto:d.j.barber88@gmail.com">
-          <FooterStyle.StyledIcon
-            className="logos"
-            icon={faEnvelope}
-            size="3x"
-          />
+          <FooterStyle.StyledIcon icon={faEnvelope} size="3x" />
           <p>d.j.barber88@gmail.com</p>
         </FooterStyle.SocialLink>
       </FooterStyle.SocialLinkIcons>
       <FooterStyle.SocialLinkIcons>
         <FooterStyle.SocialLink href="Resume.pdf" target="_blank">
-          <FooterStyle.StyledIcon
-            className="logos"
-            icon={faFilePdf}
-            size="3x"
-          />
+          <FooterStyle.StyledIcon icon={faFilePdf} size="3x" />
           <p>CV</p>
         </FooterStyle.SocialLink>
       </FooterStyle.SocialLinkIcons>
