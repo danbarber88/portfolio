@@ -10,7 +10,6 @@ const StyledButton = styled.div`
   cursor: pointer;
   user-select: none;
   height: 73px;
-  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 
   /* .line, .one and .two are classes on nav-button.svg */
   .line {

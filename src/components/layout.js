@@ -8,6 +8,7 @@ import Nav from "./nav"
 
 const GlobalStyle = createGlobalStyle`
   body {
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
     background-color: #fafafa;
     color: #2D2F45;
   }
