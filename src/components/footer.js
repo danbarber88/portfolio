@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import { faLinkedin, faGithubSquare } from "@fortawesome/free-brands-svg-icons"
 import { faEnvelope, faFilePdf } from "@fortawesome/free-regular-svg-icons"
 import * as FooterStyle from "./styled-components/footerStyles"
@@ -12,7 +13,9 @@ const Footer = props => (
         <FooterStyle.NavItem>Work</FooterStyle.NavItem>
       </ul>
       <FooterStyle.LogoContainer>
-        <FooterStyle.StyledLogo />
+        <Link to="/">
+          <FooterStyle.StyledLogo />
+        </Link>
       </FooterStyle.LogoContainer>
     </FooterStyle.Nav>
     <FooterStyle.SocialLinksContainer>

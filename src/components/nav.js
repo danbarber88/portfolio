@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import { Link } from "gatsby"
 
 import NavButton from "./navButton"
 import {
@@ -28,7 +29,9 @@ class Nav extends Component {
   render() {
     return (
       <StyledNav navOpen={this.state.navOpen}>
-        <StyledLogo />
+        <Link to="/">
+          <StyledLogo />
+        </Link>
 
         <Container>
           <NavItems>
