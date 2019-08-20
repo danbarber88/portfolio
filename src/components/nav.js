@@ -1,7 +1,8 @@
 import React, { Component } from "react"
-import Logo from "../images/logo.svg"
+
 import NavButton from "./navButton"
 import {
+  StyledLogo,
   StyledNav,
   Container,
   NavItems,
@@ -27,7 +28,7 @@ class Nav extends Component {
   render() {
     return (
       <StyledNav navOpen={this.state.navOpen}>
-        <Logo />
+        <StyledLogo />
 
         <Container>
           <NavItems>

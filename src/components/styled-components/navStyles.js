@@ -1,5 +1,15 @@
 import styled from "styled-components"
 import { device } from "../../utils/device"
+import Logo from "../../images/portfolio-logo.svg"
+
+export const StyledLogo = styled(Logo)`
+  height: 70px;
+  margin: 9px 0;
+
+  @media ${device.tablet} {
+    height: 60px;
+  }
+`
 
 export const StyledNav = styled.nav`
   position: absolute;

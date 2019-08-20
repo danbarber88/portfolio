@@ -4,7 +4,7 @@ import Layout, { Wrapper } from "../components/layout"
 import SEO from "../components/seo"
 import MulberryLogo from "../images/mulberry-logo.svg"
 import F1Logo from "../images/f1-logo.svg"
-import PortfolioLogo from "../images/portfolio-logo.svg"
+import PortfolioLogoLight from "../images/portfolio-logo-light.svg"
 import Footer from "../components/footer"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
 import { faGlobeEurope } from "@fortawesome/free-solid-svg-icons"
@@ -107,7 +107,7 @@ const WorkPage = () => (
       </WorkStyle.WorkContainer>
       <WorkStyle.WorkContainer>
         <WorkStyle.LogoContainer background="#2D2F45" square>
-          <PortfolioLogo className="logo-in-square" />
+          <PortfolioLogoLight className="logo-in-square" />
         </WorkStyle.LogoContainer>
         <WorkStyle.Description padding="0 0 0 40px">
           <WorkStyle.ProjectName>This Portfolio</WorkStyle.ProjectName>

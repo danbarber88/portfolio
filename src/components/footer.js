@@ -1,5 +1,4 @@
 import React from "react"
-import Logo from "../images/light-logo.svg"
 import { faLinkedin, faGithubSquare } from "@fortawesome/free-brands-svg-icons"
 import { faEnvelope, faFilePdf } from "@fortawesome/free-regular-svg-icons"
 import * as FooterStyle from "./styled-components/footerStyles"
@@ -13,7 +12,7 @@ const Footer = props => (
         <FooterStyle.NavItem>Work</FooterStyle.NavItem>
       </ul>
       <FooterStyle.LogoContainer>
-        <Logo />
+        <FooterStyle.StyledLogo />
       </FooterStyle.LogoContainer>
     </FooterStyle.Nav>
     <FooterStyle.SocialLinksContainer>

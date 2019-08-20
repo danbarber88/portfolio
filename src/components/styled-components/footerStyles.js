@@ -1,10 +1,16 @@
 import styled from "styled-components"
 import { device } from "../../utils/device"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import Logo from "../../images/portfolio-logo.svg"
+
+export const StyledLogo = styled(Logo)`
+  height: 100px;
+`
 
 export const Container = styled.footer`
   color: ${props => (props.darkBg ? "#fafafa" : "inherit")};
 
+  /* class name on portfolio-logo.svg */
   .logo-d {
     fill: ${props => (props.darkBg ? "#fafafa" : "#2d2f45")};
   }
