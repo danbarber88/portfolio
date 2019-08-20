@@ -21,7 +21,7 @@ export const Container = styled.section`
 
 export const TextWrapper = styled.div`
   font-family: Oswald;
-  width: 201px;
+  width: 205px;
 `
 
 export const Name = styled.p`
