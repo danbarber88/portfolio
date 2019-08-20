@@ -57,14 +57,14 @@ export const StyledIcon = styled(FontAwesomeIcon)`
   }
 
   @media ${device.laptopL} {
-    margin: 10px;
+    margin: 10px 10px 0 10px;
   }
 `
 
 export const SocialLinkIcons = styled.div`
   display: flex;
   align-items: center;
-  margin: 20px 20px;
+  margin: 20px;
 
   p {
     margin: 0;
