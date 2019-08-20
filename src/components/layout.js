@@ -1,10 +1,29 @@
-import React from "react"
+import React, { Component } from "react"
 import PropTypes from "prop-types"
 import { createGlobalStyle } from "styled-components"
 import styled from "styled-components"
 import { device } from "../utils/device"
 
 import Nav from "./nav"
+
+// attach smooth scroll to all anchor links
+if (typeof window != "undefined") {
+  // eslint-disable-next-line global-require
+  require("smooth-scroll")('a[href*="#"]', {
+    offset: anchor => {
+      // Default to 0 offset if on tablet/mobile
+      if (window.innerWidth < 768) {
+        return 0
+      }
+
+      if (anchor.id == "about") {
+        return 600
+      } else if (anchor.id == "skills") {
+        return 250
+      }
+    },
+  })
+}
 
 const GlobalStyle = createGlobalStyle`
   body {
