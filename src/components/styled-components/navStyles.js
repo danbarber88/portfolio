@@ -2,17 +2,6 @@ import styled from "styled-components"
 import { device } from "../../utils/device"
 import Logo from "../../images/portfolio-logo.svg"
 
-export const StyledLogo = styled(Logo)`
-  height: 70px;
-  width: 60px;
-  margin: 9px 0;
-
-  @media ${device.tablet} {
-    height: 60px;
-    width: 51px;
-  }
-`
-
 export const StyledNav = styled.nav`
   position: absolute;
   width: 100%;
@@ -22,6 +11,7 @@ export const StyledNav = styled.nav`
   align-items: center;
   background-color: #fff;
   padding: 30px 50px;
+  box-shadow: 0 0 5px -4px #888;
 
   @media ${device.tablet} {
     align-items: flex-start;
@@ -32,6 +22,17 @@ export const StyledNav = styled.nav`
     /* Delay the height animation to give the NavItems a chance to fade out on nav close */
     transition: ${props =>
       props.navOpen ? "height 0.15s ease-out" : "height 0.15s 0.35s ease-out"};
+  }
+`
+
+export const StyledLogo = styled(Logo)`
+  height: 70px;
+  width: 60px;
+  margin: 9px 0;
+
+  @media ${device.tablet} {
+    height: 60px;
+    width: 51px;
   }
 `
 
