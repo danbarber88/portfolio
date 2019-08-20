@@ -8,9 +8,15 @@ const Footer = props => (
   <FooterStyle.Container darkBg={props.darkBg}>
     <FooterStyle.Nav>
       <ul>
-        <FooterStyle.NavItem>About</FooterStyle.NavItem>
-        <FooterStyle.NavItem>Skills</FooterStyle.NavItem>
-        <FooterStyle.NavItem>Work</FooterStyle.NavItem>
+        <FooterStyle.NavItem>
+          <Link to="/#about">About</Link>
+        </FooterStyle.NavItem>
+        <FooterStyle.NavItem>
+          <Link to="/#skills">Skills</Link>
+        </FooterStyle.NavItem>
+        <FooterStyle.NavItem>
+          <Link to="/work/">Work</Link>
+        </FooterStyle.NavItem>
       </ul>
       <FooterStyle.LogoContainer>
         <Link to="/">

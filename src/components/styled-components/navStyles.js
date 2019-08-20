@@ -63,9 +63,17 @@ export const NavItem = styled.li`
   font-family: Oswald;
   font-size: 1.5em;
   margin: 0 50px;
-  text-decoration-color: #9c5f10;
-
   transition: all 0.15s ease-out;
+
+  a {
+    text-decoration: none;
+    text-decoration-color: #9c5f10;
+    color: inherit;
+  }
+
+  :hover {
+    text-decoration: underline;
+  }
 
   /* Fade in from right to left when nav opens */
   transform: ${props =>
@@ -83,10 +91,5 @@ export const NavItem = styled.li`
     /* Fade in from top to bottom when nav opens */
     transform: ${props =>
       props.navOpen ? "translateY(0px)" : "translateY(-60px)"};
-  }
-
-  &:hover {
-    text-decoration: underline;
-    text-decoration-color: #9c5f10;
   }
 `

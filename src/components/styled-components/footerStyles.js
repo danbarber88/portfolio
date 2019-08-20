@@ -33,6 +33,15 @@ export const NavItem = styled.li`
   margin: 20px 0;
   list-style: none;
   letter-spacing: 1px;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  :hover {
+    text-decoration: underline;
+  }
 `
 
 export const LogoContainer = styled.div`

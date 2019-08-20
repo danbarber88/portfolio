@@ -21,7 +21,8 @@ const Container = styled.section`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 150px 0 200px 0;
+  padding-top: 50px;
+  margin: 100px 0 200px 0;
 `
 
 const IconContainer = styled.div`
@@ -55,7 +56,7 @@ const Icon = styled.div`
 `
 
 const Skills = () => (
-  <Container>
+  <Container id="skills">
     <Header>My Skills</Header>
     <IconContainer>
       <Icon>

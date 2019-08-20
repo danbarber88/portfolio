@@ -14,7 +14,8 @@ const About = styled.section`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 300px;
+  padding-top: 50px;
+  margin-top: 250px;
 
   p {
     z-index: 1;
@@ -80,7 +81,7 @@ const IndexPage = props => (
         to learning as much as I can about web dev
         <span className="orange">.</span>
       </LargeText>
-      <About>
+      <About id="about">
         <Header>About Me</Header>
         <p>
           With over 12 years in the fitted kitchen industry under my belt I’m

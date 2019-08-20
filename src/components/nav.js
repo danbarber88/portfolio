@@ -29,14 +29,23 @@ class Nav extends Component {
 
         <NavStyle.Container>
           <NavStyle.NavItems>
-            <NavStyle.NavItem navOpen={this.state.navOpen}>
-              About
+            <NavStyle.NavItem
+              navOpen={this.state.navOpen}
+              onClick={this.handleClick}
+            >
+              <Link to="/#about">About</Link>
             </NavStyle.NavItem>
-            <NavStyle.NavItem navOpen={this.state.navOpen}>
-              Skills
+            <NavStyle.NavItem
+              navOpen={this.state.navOpen}
+              onClick={this.handleClick}
+            >
+              <Link to="/#skills">Skills</Link>
             </NavStyle.NavItem>
-            <NavStyle.NavItem navOpen={this.state.navOpen}>
-              Work
+            <NavStyle.NavItem
+              navOpen={this.state.navOpen}
+              onClick={this.handleClick}
+            >
+              <Link to="/work/">Work</Link>
             </NavStyle.NavItem>
           </NavStyle.NavItems>
         </NavStyle.Container>
