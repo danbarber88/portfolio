@@ -49,8 +49,23 @@ const StyledLink = styled(Link)`
   letter-spacing: 0.05em;
   text-decoration: none;
 
+  :hover {
+    text-decoration: underline;
+    text-decoration-color: #9c5f10;
+  }
+
   :visited {
     color: #fafafa;
+  }
+
+  br {
+    display: none;
+  }
+
+  @media ${device.mobileL} {
+    br {
+      display: block;
+    }
   }
 `
 
@@ -83,7 +98,10 @@ const IndexPage = props => (
       <Wave fixed={props.data.wave.childImageSharp.fixed} critical />
       <Wrapper>
         <Skills />
-        <StyledLink to="/work/">Explore my work ></StyledLink>
+        <StyledLink to="/work/">
+          Explore <br />
+          my work >
+        </StyledLink>
         <Footer darkBg />
       </Wrapper>
     </DarkSection>
