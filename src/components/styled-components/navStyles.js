@@ -4,10 +4,12 @@ import Logo from "../../images/portfolio-logo.svg"
 
 export const StyledLogo = styled(Logo)`
   height: 70px;
+  width: 60px;
   margin: 9px 0;
 
   @media ${device.tablet} {
     height: 60px;
+    width: 51px;
   }
 `
 
