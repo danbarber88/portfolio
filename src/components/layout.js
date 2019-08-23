@@ -1,4 +1,4 @@
-import React, { Component } from "react"
+import React from "react"
 import PropTypes from "prop-types"
 import { createGlobalStyle } from "styled-components"
 import styled from "styled-components"
@@ -7,7 +7,7 @@ import { device } from "../utils/device"
 import Nav from "./nav"
 
 // attach smooth scroll to all anchor links
-if (typeof window != "undefined") {
+if (typeof window !== "undefined") {
   // eslint-disable-next-line global-require
   require("smooth-scroll")('a[href*="#"]', {
     offset: anchor => {
@@ -16,9 +16,9 @@ if (typeof window != "undefined") {
         return 0
       }
 
-      if (anchor.id == "about") {
+      if (anchor.id === "about") {
         return 600
-      } else if (anchor.id == "skills") {
+      } else if (anchor.id === "skills") {
         return 250
       }
     },
