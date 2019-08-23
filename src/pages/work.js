@@ -123,6 +123,10 @@ const WorkPage = () => (
             Camp.
           </p>
           <p>
+            Free Code Camp had me complete several projects to earn their
+            certificate which can be viewed on my CodePen linked below.
+          </p>
+          <p>
             <a
               href="https://www.freecodecamp.org/certification/danbarber/legacy-front-end"
               rel="noopener noreferrer"
@@ -133,7 +137,7 @@ const WorkPage = () => (
           </p>
 
           <WorkStyle.Technology>Built with</WorkStyle.Technology>
-          <p>HTML, CSS, JavaScript, jQuery</p>
+          <p>HTML, CSS, JavaScript, jQuery and many different API's</p>
           <WorkStyle.ButtonContainer>
             <WorkStyle.Button
               href="https://codepen.io/danbarber88/pens/"
