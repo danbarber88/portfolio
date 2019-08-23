@@ -4,9 +4,13 @@ import Layout, { Wrapper } from "../components/layout"
 import SEO from "../components/seo"
 import MulberryLogo from "../images/mulberry-logo.svg"
 import F1Logo from "../images/f1-logo.svg"
-import PortfolioLogoLight from "../images/portfolio-logo-light.svg"
+import FCCLogo from "../images/fcc-logo.svg"
 import Footer from "../components/footer"
-import { faGithub } from "@fortawesome/free-brands-svg-icons"
+import {
+  faGithub,
+  faFreeCodeCamp,
+  faCodepen,
+} from "@fortawesome/free-brands-svg-icons"
 import { faGlobeEurope } from "@fortawesome/free-solid-svg-icons"
 import * as WorkStyle from "../components/styled-components/workStyles"
 
@@ -106,29 +110,46 @@ const WorkPage = () => (
         </WorkStyle.LogoContainer>
       </WorkStyle.WorkContainer>
       <WorkStyle.WorkContainer>
-        <WorkStyle.LogoContainer background="#2D2F45" square>
-          <PortfolioLogoLight className="logo-in-square" />
+        <WorkStyle.LogoContainer background="#006400" square>
+          <FCCLogo className="logo-in-square" />
         </WorkStyle.LogoContainer>
         <WorkStyle.Description padding="0 0 0 40px">
-          <WorkStyle.ProjectName>This Portfolio</WorkStyle.ProjectName>
+          <WorkStyle.ProjectName>Free Code Camp</WorkStyle.ProjectName>
           <p>
-            Bacon ipsum dolor amet turkey veniam hamburger, lorem shankle
-            exercitation aliquip ut beef ribs alcatra corned beef pork chicken.
-            Fatback jerky incididunt reprehenderit ham hock aliquip, sunt ham
-            tongue tempor picanha culpa ea ut chicken. Ad ut eiusmod drumstick
-            pork loin. Do aliquip in proident, frankfurter mollit kevin. Shank
-            ut tenderloin laboris minim beef dolor.
+            I completed the Free Code Camp front end development curriculum in
+            2017, just before they switched to their new curriculum. I am
+            exceptionally thankful that resources like this exist, my journey
+            has been made a lot smoother because of resources like Free Code
+            Camp.
           </p>
-          <WorkStyle.Technology>Built with</WorkStyle.Technology>
-          <p>HTML, CSS, JavaScript, React, Gatsby, ...TBD</p>
-          <WorkStyle.ButtonContainer>
-            <WorkStyle.Button
-              href="https://github.com/danbarber88/portfolio"
+          <p>
+            <a
+              href="https://www.freecodecamp.org/certification/danbarber/legacy-front-end"
               rel="noopener noreferrer"
               target="_blank"
             >
-              <WorkStyle.ButtonIcon icon={faGithub} size="1x" />
-              GitHub
+              My Front End Certificate
+            </a>
+          </p>
+
+          <WorkStyle.Technology>Built with</WorkStyle.Technology>
+          <p>HTML, CSS, JavaScript, jQuery</p>
+          <WorkStyle.ButtonContainer>
+            <WorkStyle.Button
+              href="https://codepen.io/danbarber88/pens/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <WorkStyle.ButtonIcon icon={faCodepen} size="1x" />
+              CodePen
+            </WorkStyle.Button>
+            <WorkStyle.Button
+              href="https://www.freecodecamp.org/danbarber"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <WorkStyle.ButtonIcon icon={faFreeCodeCamp} size="1x" />
+              FCC
             </WorkStyle.Button>
           </WorkStyle.ButtonContainer>
         </WorkStyle.Description>
