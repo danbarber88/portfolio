@@ -17,13 +17,13 @@ const About = styled.section`
   padding-top: 50px;
   margin-top: 250px;
 
-  p {
+  .text-container {
     z-index: 1;
     width: 50%;
   }
 
   @media ${device.tablet} {
-    p {
+    .text-container {
       width: 100%;
     }
   }
@@ -83,16 +83,25 @@ const IndexPage = props => (
       </LargeText>
       <About id="about">
         <Header>About Me</Header>
-        <p>
-          With over 12 years in the fitted kitchen industry under my belt I’m
-          looking to move on to something new. Going down the self-taught route
-          has been tougher than I expected it to be, but once I broke past some
-          of the initial complexities and the bigger picture started to “click”,
-          I found myself enjoying my development time. At the very least I now
-          find myself with a fulfilling hobby which I’d relish any opportunity
-          to turn into a career. Please look around my portfolio and don’t
-          hesitate to get in touch.
-        </p>
+        <div className="text-container">
+          <p>
+            Choosing to go down the self-taught route has been tougher than I
+            expected it to be, but once I broke past some of the initial
+            complexities and the bigger picture started to “click”, I found
+            myself enjoying my development time. 
+          </p>
+          <p>
+            At the very least I now find myself with a fulfilling hobby which
+            I’d relish any opportunity to turn into a career. Please look around
+            my portfolio and don’t hesitate to get in touch by email at:{" "}
+            <a href="mailto:d.j.barber88@gmail.com">d.j.barber88@gmail.com</a>{" "}
+            or find other forms of contact in my{" "}
+            <a href="/CV.pdf" target="_blank">
+              CV
+            </a>
+            .
+          </p>
+        </div>
       </About>
     </Wrapper>
     <DarkSection>

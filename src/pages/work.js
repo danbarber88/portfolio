@@ -77,7 +77,7 @@ const WorkPage = () => (
           </p>
           <p>
             I wrote the back-end to cache the data in a mongo database to ensure
-            that i wouldn’t have to make multiple requests to the API. The
+            that I wouldn’t have to make multiple requests to the API. The
             front-end converts race times from a json file using Moment.js and
             uses Apollo/GraphQL to query the back-end for the results.
           </p>
@@ -124,7 +124,8 @@ const WorkPage = () => (
           </p>
           <p>
             Free Code Camp had me complete several projects to earn their
-            certificate which can be viewed on my CodePen linked below.
+            certificate. You can see the finished projects on my Codepen account
+            linked below.
           </p>
           <p>
             <a
