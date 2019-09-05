@@ -33,7 +33,7 @@ class Nav extends Component {
               navOpen={this.state.navOpen}
               onClick={this.handleClick}
             >
-              <Link to="/#about">About</Link>
+              <Link to="/">About</Link>
             </NavStyle.NavItem>
             <NavStyle.NavItem
               navOpen={this.state.navOpen}
