@@ -6,7 +6,7 @@ import { device } from "../utils/device"
 import HTML from "../images/devicons/html5.svg"
 import CSS from "../images/devicons/css3.svg"
 import JS from "../images/devicons/javascript.svg"
-import Grunt from "../images/devicons/grunt.svg"
+import GraphQL from "../images/devicons/graphql.svg"
 import ReactIcon from "../images/devicons/react-icon.svg"
 import Gatsby from "../images/devicons/html5.svg"
 import Git from "../images/devicons/git.svg"
@@ -72,8 +72,8 @@ const Skills = () => (
         <p>JavaScript</p>
       </Icon>
       <Icon>
-        <Grunt />
-        <p>Grunt.js</p>
+        <GraphQL />
+        <p>GraphQL</p>
       </Icon>
       <Icon>
         <ReactIcon />
