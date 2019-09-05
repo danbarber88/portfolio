@@ -32,6 +32,10 @@ const GlobalStyle = createGlobalStyle`
     color: #2D2F45;
   }
 
+  a {
+    color: #9c5f10;
+  }
+
   .orange {
     color: #9c5f10;
   }
