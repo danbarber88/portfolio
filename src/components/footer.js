@@ -9,7 +9,7 @@ const Footer = props => (
     <FooterStyle.Nav>
       <ul>
         <FooterStyle.NavItem>
-          <Link to="/#about">About</Link>
+          <Link to="/">About</Link>
         </FooterStyle.NavItem>
         <FooterStyle.NavItem>
           <Link to="/#skills">Skills</Link>
