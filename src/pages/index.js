@@ -85,21 +85,20 @@ const IndexPage = props => (
         <Header>About Me</Header>
         <div className="text-container">
           <p>
-            Choosing to go down the self-taught route has been tougher than I
-            expected it to be, but once I broke past some of the initial
-            complexities and the bigger picture started to “click”, I found
-            myself enjoying my development time. 
+            Self teaching has required a decent amount of discipline and I’ve
+            learnt a lot over the last two years but I feel like I’ve only just
+            scratched the surface of what this industry has to offer. I can’t
+            wait to continue learning and growing in a professional environment.
           </p>
           <p>
-            At the very least I now find myself with a fulfilling hobby which
-            I’d relish any opportunity to turn into a career. Please look around
-            my portfolio and don’t hesitate to get in touch by email at:{" "}
+            So please look around my portfolio and if you like what you see you
+            can contact me by email at:{" "}
             <a href="mailto:d.j.barber88@gmail.com">d.j.barber88@gmail.com</a>{" "}
             or find other forms of contact in my{" "}
             <a href="/CV.pdf" target="_blank">
               CV
             </a>
-            .
+            . I’m looking forward to hearing from you.
           </p>
         </div>
       </About>
