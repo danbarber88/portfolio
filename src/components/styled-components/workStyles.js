@@ -98,7 +98,6 @@ export const Button = styled.a`
   color: #fafafa;
   text-decoration: none;
   font-size: 16px;
-  padding-bottom: 2.5px;
 
   :hover {
     background: #2d2f45;
@@ -106,5 +105,5 @@ export const Button = styled.a`
 `
 
 export const ButtonIcon = styled(FontAwesomeIcon)`
-  margin: 2.5px 5px 0 0;
+  margin: 0 5px 3px 0;
 `
