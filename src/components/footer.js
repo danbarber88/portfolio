@@ -50,7 +50,7 @@ const Footer = props => (
         </FooterStyle.SocialLink>
       </FooterStyle.SocialLinkIcons>
       <FooterStyle.SocialLinkIcons>
-        <FooterStyle.SocialLink href="/CV.pdf" target="_blank">
+        <FooterStyle.SocialLink href="/danbarbercv.pdf" target="_blank">
           <FooterStyle.StyledIcon icon={faFilePdf} size="3x" />
           <p>CV</p>
         </FooterStyle.SocialLink>

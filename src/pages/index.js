@@ -95,7 +95,7 @@ const IndexPage = props => (
             can contact me by email at:{" "}
             <a href="mailto:d.j.barber88@gmail.com">d.j.barber88@gmail.com</a>{" "}
             or find other forms of contact in my{" "}
-            <a href="/CV.pdf" target="_blank">
+            <a href="/danbarbercv.pdf" target="_blank">
               CV
             </a>
             . I’m looking forward to hearing from you.
