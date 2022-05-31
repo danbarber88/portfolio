@@ -31,15 +31,10 @@ const About = styled.section`
 
 const DarkSection = styled.div`
   position: relative;
-  margin-top: -300px;
+  margin-top: 200px;
   background: linear-gradient(179.93deg, #2d2f45 10.77%, #1c1d2d 91.61%);
   width: 100%;
   box-sizing: border-box;
-`
-
-const Wave = styled(Img)`
-  width: 100%;
-  max-width: 100%;
 `
 
 const StyledLink = styled(Link)`
@@ -77,7 +72,7 @@ const IndexPage = props => (
     <Wrapper>
       <Intro />
       <LargeText>
-        I<span className="orange">'</span>ve spent the last two years dedicated
+        I<span className="orange">'</span>ve spent the last few years dedicated
         to learning as much as I can about web dev
         <span className="orange">.</span>
       </LargeText>
@@ -85,13 +80,12 @@ const IndexPage = props => (
         <Header>About Me</Header>
         <div className="text-container">
           <p>
-            Self teaching has required a decent amount of discipline and I’ve
-            learnt a lot over the last two years but I feel like I’ve only just
-            scratched the surface of what this industry has to offer. I can’t
-            wait to continue learning and growing in a professional environment.
+            I'm currently working remotely for Wren Kitchens as a Typescript / Javascript developer.
+            Over the last few years working at Wren I've had a lot of opportunity to continue the
+            learning journey and work with some great people.
           </p>
           <p>
-            So please look around my portfolio and if you like what you see you
+            Please look around my portfolio and if you like what you see you
             can contact me by email at:{" "}
             <a href="mailto:d.j.barber88@gmail.com">d.j.barber88@gmail.com</a>{" "}
             or find other forms of contact in my{" "}
@@ -104,7 +98,6 @@ const IndexPage = props => (
       </About>
     </Wrapper>
     <DarkSection>
-      <Wave fixed={props.data.wave.childImageSharp.fixed} critical />
       <Wrapper>
         <Skills />
         <StyledLink to="/work/">
@@ -117,16 +110,5 @@ const IndexPage = props => (
   </Layout>
 )
 
-export const query = graphql`
-  query {
-    wave: file(relativePath: { eq: "wave.png" }) {
-      childImageSharp {
-        fixed(quality: 100, width: 2000) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
-  }
-`
 
 export default IndexPage

@@ -10,18 +10,18 @@ import GraphQL from "../images/devicons/graphql.svg"
 import ReactIcon from "../images/devicons/react-icon.svg"
 import Gatsby from "../images/devicons/gatsby.svg"
 import Git from "../images/devicons/git.svg"
-import Bootstrap from "../images/devicons/bootstrap.svg"
+import Jasmine from "../images/devicons/jasmine.svg"
 import Node from "../images/devicons/nodejs.svg"
 import Express from "../images/devicons/express.svg"
 import Mongodb from "../images/devicons/mongodb.svg"
-import Jquery from "../images/devicons/jquery.svg"
+import TS from "../images/devicons/typescript.svg"
 
 const Container = styled.section`
   color: #fafafa;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-top: 50px;
+  padding-top: 250px;
   margin: 100px 0 200px 0;
 `
 
@@ -44,6 +44,7 @@ const Icon = styled.div`
 
   svg {
     color: #9c5f10;
+    max-width: 32px;
   }
 
   p {
@@ -72,6 +73,10 @@ const Skills = () => (
         <p>JavaScript</p>
       </Icon>
       <Icon>
+        <TS />
+        <p>TypeScript</p>
+      </Icon>
+      <Icon>
         <GraphQL />
         <p>GraphQL</p>
       </Icon>
@@ -88,8 +93,8 @@ const Skills = () => (
         <p>git</p>
       </Icon>
       <Icon>
-        <Bootstrap />
-        <p>Bootstrap</p>
+        <Jasmine />
+        <p>Jasmine</p>
       </Icon>
       <Icon>
         <Node />
@@ -102,10 +107,6 @@ const Skills = () => (
       <Icon>
         <Mongodb />
         <p>mongodb</p>
-      </Icon>
-      <Icon>
-        <Jquery />
-        <p>jQuery</p>
       </Icon>
     </IconContainer>
   </Container>

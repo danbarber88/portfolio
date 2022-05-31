@@ -3,6 +3,7 @@ import React from "react"
 import Layout, { Wrapper } from "../components/layout"
 import SEO from "../components/seo"
 import MulberryLogo from "../images/mulberry-logo.svg"
+import VerrdiLogo from "../images/verrdi-logo.svg"
 import F1Logo from "../images/f1-logo.svg"
 import FCCLogo from "../images/fcc-logo.svg"
 import Footer from "../components/footer"
@@ -41,7 +42,7 @@ const WorkPage = () => (
           <p>
             I wanted to make sure the owners at Mulberry could keep their
             website up to date by being able to add new projects, testimonials
-            and news without having to seek the help of a developer so I
+            and news without having to seek the help of a developer, so I
             integrated a CMS into the site.
           </p>
           <WorkStyle.Technology>Built with</WorkStyle.Technology>
@@ -107,6 +108,47 @@ const WorkPage = () => (
         </WorkStyle.Description>
         <WorkStyle.LogoContainer background="#15151E">
           <F1Logo />
+        </WorkStyle.LogoContainer>
+      </WorkStyle.WorkContainer>
+      <WorkStyle.WorkContainer>
+        <WorkStyle.Description padding="0 40px 0 0">
+          <WorkStyle.ProjectName>
+            Verrdi TSS
+          </WorkStyle.ProjectName>
+          <p>
+            I was tasked with creating a website for Verrdi TSS, they offer CPC
+            courses to HGV drivers and wanted a central location for prospective
+            clients to be able to get a good overview of the company and browse available courses.
+          </p>
+          <p>
+            The main requests from Verrdi was that it would be possible to see the courses they
+            are currently offering and that a customer could sign up. Verrdi used Ticket Tailor
+            for the creation of their courses and I was able to query their API and list the courses on the website.
+          </p>
+          <WorkStyle.Technology>Built with</WorkStyle.Technology>
+          <p>HTML, CSS, JavaScript, React, Gatsby, GraphQL</p>
+          <WorkStyle.ButtonContainer>
+            <WorkStyle.Button
+                href="https://www.verrdi.co.uk/"
+                rel="noopener noreferrer"
+                target="_blank"
+            >
+              <WorkStyle.ButtonIcon icon={faGlobeEurope} size="1x" />
+              Website
+            </WorkStyle.Button>
+            <WorkStyle.Button
+                href="https://github.com/danbarber88/verrdi"
+                rel="noopener noreferrer"
+                target="_blank"
+            >
+              <WorkStyle.ButtonIcon icon={faGithub} size="1x" />
+              GitHub
+            </WorkStyle.Button>
+          </WorkStyle.ButtonContainer>
+        </WorkStyle.Description>
+
+        <WorkStyle.LogoContainer background="#014124" square>
+          <VerrdiLogo className="logo-in-square" />
         </WorkStyle.LogoContainer>
       </WorkStyle.WorkContainer>
       <WorkStyle.WorkContainer>

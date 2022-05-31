@@ -26,6 +26,10 @@ export const LogoContainer = styled.div`
   width: ${props => (props.square ? "500px" : "275px")};
   height: ${props => (props.square ? "500px" : "auto")};
   background: ${props => props.background};
+  
+  svg {
+    max-width: 80%;
+  }
 
   @media ${device.laptop} {
     width: ${props => (props.square ? "350px" : "275px")};
